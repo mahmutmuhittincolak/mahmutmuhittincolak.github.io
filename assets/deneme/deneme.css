@@ -1,0 +1,13 @@
+body {
+  background-color: red;
+  border: gray;
+}
+
+body.profile {
+  background-color: black;
+}
+
+body .profile {
+  border: gray;
+}
+/*# sourceMappingURL=deneme.css.map */

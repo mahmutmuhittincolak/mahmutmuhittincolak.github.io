@@ -1,0 +1,10 @@
+body {
+    background-color: red;
+    border:gray;
+    &.profile{
+        background-color: black;
+    }
+    .profile{
+        border: gray;
+    }
+}
