@@ -322,10 +322,15 @@ span.viewsup{
     flex:5;
 }
 .content-mid-tabs{
-    flex:1;
+    flex:2;
 }
 .content-mid-about{
     flex:2;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
 }
 .content-mid-projects{
     flex:4;
@@ -348,6 +353,12 @@ span.viewsup{
 }
 .content-mid-profile-img{
     flex:1;
+    background-image: url("/assets/image/rectangle3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index:1;
 }
 .content-mid-profile-text{
     flex:1;
@@ -374,22 +385,28 @@ span.viewsup{
 }
 .text-content-header-namelogo{
     flex: 4;
-    background-color: #0275B1;
     display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
+    align-items: flex-end;
 }
 .text-content-header-adress{
-    flex: 2;
+    flex: 3;
+    display: inline-flex;
+    justify-content:center;
+    align-items: flex-end;
 }
 .text-content-text{
-    flex:2;
-    background-color: #02B033;
-    display: flex;
+    flex:1;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .text-content-button{
     flex: 1;
-    background-color: #c43535;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 13px;
 }
 .fill-image{
     width: 100%;
@@ -401,9 +418,160 @@ span.viewsup{
     width: 180px;
     border-radius: 50%;
     border: 10px solid #FFFFFF;
+    margin-top:-100px;
+    z-index:2;
 }
 .yuvarlak-200:hover{
-    border: 10px solid lightblue;
+
+}
+.buttonblue {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #FFFFFF;
+    border: 1px solid #0275B1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #0275B1;
+    padding:9px 19px;
+    margin:4px 7px;
+}
+.buttonblue:hover{
+    border: none;  
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    margin:4px 7px;
+    padding: 10px 20px;
+    color: white;
 }
 
+.buttonwhite {
+    border: none;
+    padding: 11px 13px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin:5px 5px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+    border-radius: 4px;
+    font-family: 'Gotham Pro';
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    float:right;
+    color: #181818;
+}
+.buttonwhite .icon-options-vertical{
 
+}
+.buttonwhite .icon-note{
+    margin-right:10px;
+}
+.namelogo-icon{
+    margin-left:10px;
+}
+.namelogo-name{
+    font-size: 22px;
+    line-height: 17px;
+    color: #181818;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.text-content-header-adress .icon-cursor{
+    margin:0px 15px;
+    color: #0275B1;
+}
+.text-content-header-adress .adress-adress{
+    font-size: 14px;
+    line-height: 18px;
+    color: #181818;
+}
+.text-content-text-paragraph{
+    padding:20px 20px ;
+    font-family: gotham Pro;
+    font-size: 18px;
+    line-height: 21px;  
+    color: #181818;  
+    text-align: left;
+}
+
+/* tabs */
+
+.nav-tabs .nav-link.active {
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    border-radius: 4px 4px 0px 0px;
+    padding: 9px 9px;
+    width: 240px ;
+    height: 50px;
+    text-align: center;
+    color:white;
+}
+
+.nav-tabs .nav-link {
+    background-color: #fff;
+    color: #181818;
+    border-radius: 4px 4px 0px 0px;
+    padding: 9px;
+    width: 240px ;
+    height: 45px;
+    border: 1px solid #F7F9FB;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 3px solid #0077B5;
+    padding: 7px;
+}
+
+.nav-tabs {
+
+}
+
+.tab-content {
+    border: 1px solid #F7F9FB;
+    padding: 20px;
+}
+.nav-tabs{
+    align-items: flex-end;
+}
+
+.p4 p{
+    text-align: left;
+}
+
+/* tabs */
+
+
+.content-mid-about-h4{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align:left;
+    
+    margin:15px;
+}
+.content-mid-about-paragraph{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align:left;
+    margin: 15px;
+    font-size: 14px;
+    line-height: 150%;
+/* or 21px */
+
+
+color: #181818;
+}
+
+.content-mid-about-a{
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    color: #0275B1;
+}

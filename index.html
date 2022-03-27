@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 <title>Document</title>              
 </head>                 
 <body>
+    <script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
     <center>
     <div class="profilepage">
         <div class="navigation">
@@ -56,21 +60,84 @@
             <div class="content-left"></div>
             <div class="content-mid">
                 <div class="content-mid-profile">
-                    <div class="content-mid-profile-img"><img class="fill-image" src="assets/image/rectangle3.png"></div>
+                    <div class="content-mid-profile-img">
+                        <button class="buttonwhite"><span class="icon-options-vertical"></span></button> 
+                        <button class="buttonwhite"><span class="icon-note"></span>Edit Profile</button>
+                    </div>
                     <div class="content-mid-profile-text">
                         <div class="content-mid-profile-text-pp"><img class="yuvarlak-200" src="/assets/image/rectangle5.png"></div>
                         <div class="content-mid-profile-text-content">
                             <div class="text-content-header">
-                                <div class="text-content-header-namelogo"></div>
-                                <div class="text-content-header-adress"></div>
+                                <div class="text-content-header-namelogo"><span class="namelogo-name">Dmitry Kargaev</span><img class="namelogo-icon" src="/assets/image/logo1.png"></div>
+                                <div class="text-content-header-adress"><span class="icon-cursor"></span><span class="adress-adress">Saint Petersburg, Russian Federation</span></div>
                             </div>
-                            <div class="text-content-text"></div>
-                            <div class="text-content-button"></div>
+                            <div class="text-content-text">
+                                <p class="text-content-text-paragraph">Freelance UX/UI designer, 80+ projects in web design, mobile apps  (iOS & android) and creative projects. Open to offers.</p>
+                            </div>
+                            <div class="text-content-button">
+                                <button class="buttonblue">CONTACT İNFO</button> 
+                                <button class="buttonblue">1,043 CONNECTİONS</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="content-mid-tabs"></div>
-                <div class="content-mid-about"></div>
+                <div class="content-mid-tabs">
+                    <div class="container mt-2">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                                    PROFILE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#profile">
+                                    ACTIVITY & INTERESTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#contact">
+                                    ARTICLES</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <div class="row border g-0 rounded shadow-sm">
+                                    <div class="col p-4">
+                                        <h3>Profile</h3>
+                                        <p class="text-content-text-paragraph">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile">
+                                <div class="row border g-0 rounded shadow-sm">
+                                    <div class="col p-4">
+                                        <h3>Activity</h3>
+                                        <p class="text-content-text-paragraph">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="contact">
+                                <div class="row border g-0 rounded shadow-sm">
+                                    <div class="col p-4">
+                                        <h3>Articles</h3>
+                                        <p class="text-content-text-paragraph">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+                <div class="content-mid-about">
+                    <h3 class="content-mid-about-h4">About</h3>
+                                        <p class="content-mid-about-paragraph">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        </p>
+                    <span><a href="" class="content-mid-about-a">See More</a></span>
+                </div>
                 <div class="content-mid-projects"></div>
                 <div class="content-mid-skills"></div>
                 <div class="content-mid-experience"></div>
